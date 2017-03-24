@@ -1,0 +1,68 @@
+[03/10/2017 15:17:29][    Get Company Initialization] Completed with Success
+[03/10/2017 15:17:29][                       Start()] Starting Function
+[03/10/2017 15:17:57][                       Start()] Executing SQL SELECT A.internal_id [NoficationId],B.internal_id [TimeStampId],B.job_date,CONVERT(CHAR,B.job_travel_start,103) [job_travel_start_date],CONVERT(CHAR,B.job_travel_start,108) [job_travel_start_time],  CONVERT(CHAR,B.job_travel_end,103) [job_travel_end_date],CONVERT(CHAR,B.job_travel_end,108) [job_travel_end_time],  CONVERT(CHAR,B.job_waiting_start,103) [job_waiting_start_date],CONVERT(CHAR,B.job_waiting_start,108) [job_waiting_start_time],  CONVERT(CHAR,B.job_waiting_end,103) [job_waiting_end_date],CONVERT(CHAR,B.job_waiting_end,108) [job_waiting_end_time],  CONVERT(CHAR,B.job_start,103) [job_start_date],CONVERT(CHAR,B.job_start,108) [job_start_time],  CONVERT(CHAR,B.job_end,103) [job_end_date],CONVERT(CHAR,B.job_end,108) [job_end_time],B.job_description,A.notification_resp,A.notification_status  FROM GetzMW_PROD.dbo.op_notification A  INNER JOIN GetzMW_PROD.dbo.op_timestamp B ON B.tstamp_notification = A.internal_id  WHERE A.notification_status IN('E0005','E0009') AND A.notification_sapready = 1  AND A.internal_id = 2973  AND B.internal_id COLLATE SQL_Latin1_General_CP850_CI_AS NOT IN(SELECT U_TimeStampId FROM Sap_Getz_PROD.dbo.OCLG WHERE CONVERT(CHAR,parentId) = A.internal_id AND ISNULL(U_TimeStampId,'') <> '') 
+[03/10/2017 15:18:22][                       Start()] Calling ProcessDatas()
+[03/10/2017 15:18:26][AddActivityUsingActivityService] Starting Function 
+[03/10/2017 15:18:27][            ConnectToCompany()] Starting function
+[03/10/2017 15:18:27][            ConnectToCompany()] Initializing the Company Object
+[03/10/2017 15:18:27][            ConnectToCompany()] Assigning the representing database name
+[03/10/2017 15:18:27][            ConnectToCompany()] Connecting to the Company Database.
+[03/10/2017 15:18:31][            ConnectToCompany()] Completed with SUCCESS
+[03/10/2017 15:18:34][              StartTransaction] Starting Transaction
+[03/10/2017 15:18:34][              StartTransaction] Trancation Started Successfully
+[03/10/2017 15:18:40][AddActivityUsingActivityService] Processing Service call 2973
+[03/10/2017 15:18:42][AddActivityUsingActivityService] Adding Activity for Travel
+[03/10/2017 15:19:00][AddActivityUsingActivityService] Adding Activity for Waiting
+[03/10/2017 15:19:05][AddActivityUsingActivityService] Adding Activity for Job
+[03/10/2017 15:19:18][AddActivityUsingActivityService] Calling UpdateServiceCall()
+[03/10/2017 15:19:22][    UpdateServiceCall_Dataview] Starting Function
+[03/10/2017 15:19:24][    UpdateServiceCall_Dataview] Executing SQL SELECT * FROM GetzMW_PROD.dbo.op_notification A  WHERE A.notification_sapready = 1
+[03/10/2017 15:20:24][    UpdateServiceCall_Dataview] Completed with SUCCESS
+[03/10/2017 15:20:28][AddActivityUsingActivityService] Calling CommitTransaction()
+[03/10/2017 15:20:29][             CommitTransaction] Starting Function
+[03/10/2017 15:20:29][             CommitTransaction] Commit Transaction Complete
+[03/10/2017 15:20:30][AddActivityUsingActivityService] Completed with SUCCESS
+[03/10/2017 15:20:33][                       Start()] Completed with SUCCESS
+[03/10/2017 15:20:35][                        Main()] Completed with SUCCESS
+[03/23/2017 15:34:16][    Get Company Initialization] Completed with Success
+[03/23/2017 15:34:16][                       Start()] Starting Function
+[03/23/2017 15:34:16][                       Start()] Executing SQL SELECT A.internal_id [NoficationId],B.internal_id [TimeStampId],B.job_date,CONVERT(CHAR,B.job_travel_start,103) [job_travel_start_date],CONVERT(CHAR,B.job_travel_start,108) [job_travel_start_time],  CONVERT(CHAR,B.job_travel_end,103) [job_travel_end_date],CONVERT(CHAR,B.job_travel_end,108) [job_travel_end_time],  CONVERT(CHAR,B.job_waiting_start,103) [job_waiting_start_date],CONVERT(CHAR,B.job_waiting_start,108) [job_waiting_start_time],  CONVERT(CHAR,B.job_waiting_end,103) [job_waiting_end_date],CONVERT(CHAR,B.job_waiting_end,108) [job_waiting_end_time],  CONVERT(CHAR,B.job_start,103) [job_start_date],CONVERT(CHAR,B.job_start,108) [job_start_time],  CONVERT(CHAR,B.job_end,103) [job_end_date],CONVERT(CHAR,B.job_end,108) [job_end_time],B.job_description,A.notification_resp,A.notification_status  FROM GetzMW_PROD.dbo.op_notification A  INNER JOIN GetzMW_PROD.dbo.op_timestamp B ON B.tstamp_notification = A.internal_id  WHERE A.notification_status IN('E0005','E0009') AND A.notification_sapready = 1  AND B.internal_id COLLATE SQL_Latin1_General_CP850_CI_AS NOT IN(SELECT U_TimeStampId FROM Sap_Getz_PROD.dbo.OCLG WHERE CONVERT(CHAR,parentId) = A.internal_id AND ISNULL(U_TimeStampId,'') <> '') 
+[03/23/2017 15:34:16][                       Start()] Calling ProcessDatas()
+[03/23/2017 15:34:16][AddActivityUsingActivityService] Starting Function 
+[03/23/2017 15:34:20][            ConnectToCompany()] Starting function
+[03/23/2017 15:34:20][            ConnectToCompany()] Initializing the Company Object
+[03/23/2017 15:34:22][            ConnectToCompany()] Assigning the representing database name
+[03/23/2017 15:34:24][            ConnectToCompany()] Connecting to the Company Database.
+[03/23/2017 15:34:30][            ConnectToCompany()] Completed with SUCCESS
+[03/23/2017 15:34:32][              StartTransaction] Starting Transaction
+[03/23/2017 15:34:32][              StartTransaction] Trancation Started Successfully
+[03/23/2017 15:34:35][AddActivityUsingActivityService] Processing Service call 2974
+[03/23/2017 15:34:36][AddActivityUsingActivityService] Adding Activity for Travel
+[03/23/2017 15:35:02][AddActivityUsingActivityService] Adding Activity for Waiting
+[03/23/2017 15:35:17][AddActivityUsingActivityService] Adding Activity for Job
+[03/23/2017 15:35:40][AddActivityUsingActivityService] Processing Service call 2221
+[03/23/2017 15:35:49][AddActivityUsingActivityService] Adding Activity for Travel
+[03/23/2017 15:36:03][AddActivityUsingActivityService] Adding Activity for Waiting
+[03/23/2017 15:37:55][    Get Company Initialization] Completed with Success
+[03/23/2017 15:37:55][                       Start()] Starting Function
+[03/23/2017 15:42:10][    Get Company Initialization] Completed with Success
+[03/23/2017 15:42:10][                       Start()] Starting Function
+[03/23/2017 15:42:24][                       Start()] Executing SQL SELECT A.internal_id [NoficationId],B.internal_id [TimeStampId],B.job_date,CONVERT(CHAR,B.job_travel_start,103) [job_travel_start_date],CONVERT(CHAR,B.job_travel_start,108) [job_travel_start_time],  CONVERT(CHAR,B.job_travel_end,103) [job_travel_end_date],CONVERT(CHAR,B.job_travel_end,108) [job_travel_end_time],  CONVERT(CHAR,B.job_waiting_start,103) [job_waiting_start_date],CONVERT(CHAR,B.job_waiting_start,108) [job_waiting_start_time],  CONVERT(CHAR,B.job_waiting_end,103) [job_waiting_end_date],CONVERT(CHAR,B.job_waiting_end,108) [job_waiting_end_time],  CONVERT(CHAR,B.job_start,103) [job_start_date],CONVERT(CHAR,B.job_start,108) [job_start_time],  CONVERT(CHAR,B.job_end,103) [job_end_date],CONVERT(CHAR,B.job_end,108) [job_end_time],B.job_description,A.notification_resp,A.notification_status  FROM GetzMW_PROD.dbo.op_notification A  INNER JOIN GetzMW_PROD.dbo.op_timestamp B ON B.tstamp_notification = A.internal_id  WHERE A.notification_status IN('E0005','E0009') AND A.notification_sapready = 1  AND B.internal_id COLLATE SQL_Latin1_General_CP850_CI_AS NOT IN(SELECT U_TimeStampId FROM Sap_Getz_PROD.dbo.OCLG WHERE CONVERT(CHAR,parentId) = A.internal_id AND ISNULL(U_TimeStampId,'') <> '') 
+[03/23/2017 16:16:32][    Get Company Initialization] Completed with Success
+[03/23/2017 16:16:32][                       Start()] Starting Function
+[03/23/2017 16:16:32][                       Start()] Executing SQL SELECT A.internal_id [NoficationId],B.internal_id [TimeStampId],B.job_date,CONVERT(CHAR,B.job_travel_start,103) [job_travel_start_date],CONVERT(CHAR,B.job_travel_start,108) [job_travel_start_time],  CONVERT(CHAR,B.job_travel_end,103) [job_travel_end_date],CONVERT(CHAR,B.job_travel_end,108) [job_travel_end_time],  CONVERT(CHAR,B.job_waiting_start,103) [job_waiting_start_date],CONVERT(CHAR,B.job_waiting_start,108) [job_waiting_start_time],  CONVERT(CHAR,B.job_waiting_end,103) [job_waiting_end_date],CONVERT(CHAR,B.job_waiting_end,108) [job_waiting_end_time],  CONVERT(CHAR,B.job_start,103) [job_start_date],CONVERT(CHAR,B.job_start,108) [job_start_time],  CONVERT(CHAR,B.job_end,103) [job_end_date],CONVERT(CHAR,B.job_end,108) [job_end_time],B.job_description,A.notification_resp,A.notification_status  FROM GetzMW_PROD.dbo.op_notification A  INNER JOIN GetzMW_PROD.dbo.op_timestamp B ON B.tstamp_notification = A.internal_id  WHERE A.notification_status IN('E0005','E0009') AND A.notification_sapready = 1  AND B.internal_id COLLATE SQL_Latin1_General_CP850_CI_AS NOT IN(SELECT U_TimeStampId FROM Sap_Getz_PROD.dbo.OCLG WHERE CONVERT(CHAR,parentId) = A.internal_id AND ISNULL(U_TimeStampId,'') <> '') 
+[03/23/2017 16:16:32][                       Start()] Calling ProcessDatas()
+[03/23/2017 16:16:32][AddActivityUsingActivityService] Starting Function 
+[03/23/2017 16:16:32][            ConnectToCompany()] Starting function
+[03/23/2017 16:16:32][            ConnectToCompany()] Initializing the Company Object
+[03/23/2017 16:16:32][            ConnectToCompany()] Assigning the representing database name
+[03/23/2017 16:16:32][            ConnectToCompany()] Connecting to the Company Database.
+[03/23/2017 16:16:36][            ConnectToCompany()] Completed with SUCCESS
+[03/23/2017 16:16:36][              StartTransaction] Starting Transaction
+[03/23/2017 16:16:36][              StartTransaction] Trancation Started Successfully
+[03/23/2017 16:16:36][AddActivityUsingActivityService] Processing Service call 2974
+[03/23/2017 16:16:36][AddActivityUsingActivityService] Adding Activity for Travel
+[03/23/2017 16:17:07][AddActivityUsingActivityService] Processing Service call 2221
+[03/23/2017 16:17:07][AddActivityUsingActivityService] Adding Activity for Travel
+[03/23/2017 16:17:24][AddActivityUsingActivityService] Processing Service call 2221
+[03/23/2017 16:17:25][AddActivityUsingActivityService] Adding Activity for Travel

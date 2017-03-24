@@ -1,0 +1,22 @@
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.exe.config
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.exe
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.pdb
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.xml
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\Interop.SAPbobsCOM.dll
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.vbproj.ResolveComReference.cache
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.Resources.resources
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.vbproj.GenerateResource.Cache
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.exe
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.xml
+E:\Abeo-Projects\getz\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.pdb
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.exe.config
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\Interop.SAPbobsCOM.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.vbproj.ResolveComReference.cache
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.exe
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.xml
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.pdb
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.exe
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.pdb
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\bin\Debug\AE_GetzSAPSV01.xml
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.Resources.resources
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Console Application\AE_GetzSAPSV01\AE_GetzSAPSV01\obj\x86\Debug\AE_GetzSAPSV01.vbproj.GenerateResource.Cache

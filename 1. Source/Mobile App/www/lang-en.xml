@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+    <obj id="Link_TestConnection" value="Test Connection"></obj>
+    <obj id="Link_AvailableParts" value="Available Parts"></obj>
+    <obj id="Link_SynchronizeNow" value="Synchronize Now"></obj>
+    <obj id="Link_Logout" value="Logout"></obj>
+    <obj id="Textbox_NotificationSearch" value="Search..."></obj>
+    <obj id="Label_Home" value="Home"></obj>
+    <obj id="Label_Breadcrum_Home" value="Home"></obj>
+    
+    <obj id="msg_delete_confirmation" value="Are you sure you want to delete %?"></obj>
+    
+    <obj id="Tab_NotificationDetail" value="Detail"></obj>
+    <obj id="Tab_Timeline" value="Timeline"></obj>
+    <obj id="Tab_DamagesCauses" value="Damages / Causes"></obj>
+    <obj id="Tab_Parts" value="Parts"></obj>
+    <obj id="Tab_CheckList" value="CheckList"></obj>
+    <obj id="Tab_Quotation" value="Quotation"></obj>
+    <obj id="Tab_Summary" value="Summary"></obj>
+    <obj id="Tab_Final" value="Final"></obj>
+    <obj id="Tab_SignOff" value="Sign-Off"></obj>
+    
+    <obj id="Tab_Detail_AccountType_Label" value="Act. Type:"></obj>
+    <obj id="Tab_Detail_SoldTo_Label" value="Sold To:"></obj>
+    <obj id="Tab_Detail_ServiceOrder_Label" value="Service Order:"></obj>
+    <obj id="Tab_Detail_Priority_Label" value="Priority:"></obj>
+    <obj id="Tab_Detail_Equipment_Label" value="Equipment:"></obj>
+    <obj id="Tab_Detail_EquipmentLocation_Label" value="Equipment Location:"></obj>    
+    <obj id="Tab_Detail_EquipmentSNR_Label" value="Equipment Snr:"></obj>
+    <obj id="Tab_Detail_Label_RelatedNotification" value="Related Notifications"></obj>    
+    <obj id="Tab_Detail_Table_Column_NotificationID" value="Notification ID"></obj>
+    <obj id="Tab_Detail_Table_Column_Subject" value="Subject"></obj>
+    <obj id="Tab_Detail_Button_UpdateLinkNotification" value="Update Link Notification"></obj>
+    
+    <obj id="Tab_Timeline_Title_Label" value="Timeline"></obj>
+    <obj id="Tab_Timeline_Step01_Label" value="En route"></obj>
+    <obj id="Tab_Timeline_Step02_Label" value="Stop Driving"></obj>
+    <obj id="Tab_Timeline_Step03_Label" value="Start Waiting"></obj>
+    <obj id="Tab_Timeline_Step04_Label" value="Job Start"></obj>
+    <obj id="Tab_Timeline_Step05_Label" value="Job Stop"></obj>
+    <obj id="Tab_Timeline_Step06_Label" value="Back Journey"></obj>
+    <obj id="Tab_Timeline_Hitory_Title_Label" value="Timeline History"></obj>
+    <obj id="Tab_Timeline_Hitory_Table_Column_Date" value="Date"></obj>
+    <obj id="Tab_Timeline_Hitory_Table_Column_Description" value="Description"></obj>
+    <obj id="Tab_Timeline_Hitory_Table_Column_Delete" value="Delete"></obj>
+    
+    <obj id="Tab_DamageCause_Damage_Title_Label" value="Damages"></obj>
+    <obj id="Tab_DamageCause_Button_AddDamage_Label" value="Add Damage"></obj>
+    <obj id="Tab_DamageCause_Damage_Table_Column_DamageCode" value="Damage Code"></obj>
+    <obj id="Tab_DamageCause_Damage_Table_Column_DamageGroup" value="Damage Group"></obj>
+    <obj id="Tab_DamageCause_Damage_Table_Column_DamageDescription" value="Description"></obj>
+    <obj id="Tab_DamageCause_Damage_Table_Column_DamageDelete" value="Delete"></obj>
+    <obj id="Tab_DamageCause_Cause_Title_Label" value="Causes"></obj>
+    <obj id="Tab_DamageCause_Button_AddCause_Label" value="Add Cause"></obj>
+    <obj id="Tab_DamageCause_Cause_Table_Column_CauseCode" value="Cause Code"></obj>
+    <obj id="Tab_DamageCause_Cause_Table_Column_CauseGroup" value="Cause Group"></obj>
+    <obj id="Tab_DamageCause_Cause_Table_Column_CauseDescription" value="Description"></obj>
+    <obj id="Tab_DamageCause_Cause_Table_Column_CauseDelete" value="Delete"></obj>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</objects>

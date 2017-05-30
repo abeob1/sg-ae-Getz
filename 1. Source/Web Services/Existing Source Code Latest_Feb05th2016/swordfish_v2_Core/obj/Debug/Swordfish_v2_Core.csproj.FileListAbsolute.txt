@@ -1,0 +1,27 @@
+C:\Users\junming_wong\Desktop\FileGenerator.Release\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.dll
+C:\Users\junming_wong\Desktop\FileGenerator.Release\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.pdb
+C:\Users\junming_wong\Desktop\FileGenerator.Release\swordfish_v2_Core\bin\Debug\Jamila2.pdb
+C:\Users\junming_wong\Desktop\FileGenerator.Release\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
+C:\Users\junming_wong\Desktop\FileGenerator.Release\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.dll
+C:\Users\junming_wong\Desktop\jjtm_swordfish\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\swordfish_v2_Core\bin\Debug\Jamila2.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache
+C:\Users\junming_wong\Desktop\jjtm_swordfish\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
+C:\Users\junming_wong\Desktop\jjtm_swordfish\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.dll
+E:\Abeo-Projects\getz\Existing Source Code Version2\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\swordfish_v2_Core\bin\Debug\Jamila2.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache
+E:\Abeo-Projects\getz\Existing Source Code Version2\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
+E:\Abeo-Projects\getz\Existing Source Code Version2\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\getz\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.dll
+E:\Abeo-Projects\getz\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\getz\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
+E:\Abeo-Projects\getz\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\getz\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
+E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb

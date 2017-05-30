@@ -1,0 +1,40 @@
+[04/05/2016 7:16:42 PM][DownloadMasterLookUp] Starting Function
+[04/05/2016 7:22:40 PM][DownloadMasterLookUp] Starting Function
+[04/05/2016 7:22:40 PM][DownloadMasterLookUp] Before calling the GetMasterLookupInColl
+[4/7/2016 2:11:08 PM][DownloadMasterLookUp] Starting Function
+[4/7/2016 2:11:08 PM][DownloadMasterLookUp] Before calling the GetMasterLookupInColl
+[06/28/2016 2:21:55 PM][UploadOpNotificationByJSON] Starting Function
+[06/28/2016 2:21:55 PM][Dispose] Starting Function
+[06/28/2016 3:23:46 PM][UploadOpNotificationByJSON] Starting Function
+[06/28/2016 3:23:50 PM][UploadOpNotificationCollectionToSQLServer] Starting Function
+[06/28/2016 3:24:05 PM][Dispose] Starting Function
+[06/28/2016 3:25:07 PM][UploadOpNotificationByJSON] Starting Function
+[06/28/2016 3:25:12 PM][UploadOpNotificationCollectionToSQLServer] Starting Function
+[06/28/2016 3:25:51 PM][Dispose] Starting Function
+[06/28/2016 3:27:34 PM][UploadOpNotificationByJSON] Starting Function
+[06/28/2016 3:27:39 PM][UploadOpNotificationCollectionToSQLServer] Starting Function
+[06/28/2016 3:28:25 PM][UploadOpNotificationCollectionToSQLServer] Before Calling UpdateNotificationByInternalID
+[06/28/2016 3:28:28 PM][UpdateNotificationByInternalID] Starting Function
+[06/28/2016 3:28:30 PM][CloseConnection] executing Procedure
+[06/28/2016 3:29:38 PM][UpdateNotificationByInternalID] Before Dispose
+[06/28/2016 3:29:40 PM][UpdateNotificationByInternalID] After Dispose :True
+[06/28/2016 3:29:44 PM][UploadOpNotificationCollectionToSQLServer] After Calling UpdateNotificationByInternalID
+[06/28/2016 3:29:46 PM][Dispose] Starting Function
+[06/28/2016 5:48:00 PM][UploadOpNotificationByJSON] Starting Function
+[06/28/2016 5:48:02 PM][UploadOpNotificationCollectionToSQLServer] Starting Function
+[06/28/2016 5:49:05 PM][UploadOpNotificationCollectionToSQLServer] Before Calling UpdateNotificationByInternalID
+[06/28/2016 5:49:07 PM][UpdateNotificationByInternalID] Starting Function
+[06/28/2016 5:49:07 PM][CloseConnection] executing Procedure
+[06/28/2016 5:50:38 PM][UpdateNotificationByInternalID] Before Dispose
+[06/28/2016 5:50:38 PM][UpdateNotificationByInternalID] After Dispose :True
+[06/28/2016 5:50:38 PM][UploadOpNotificationCollectionToSQLServer] After Calling UpdateNotificationByInternalID
+[06/28/2016 5:50:38 PM][Dispose] Starting Function
+[06/28/2016 5:51:34 PM][UploadOpNotificationByJSON] Starting Function
+[06/28/2016 5:51:35 PM][UploadOpNotificationCollectionToSQLServer] Starting Function
+[06/28/2016 5:51:36 PM][UploadOpNotificationCollectionToSQLServer] Before Calling UpdateNotificationByInternalID
+[06/28/2016 5:51:37 PM][UpdateNotificationByInternalID] Starting Function
+[06/28/2016 5:51:37 PM][CloseConnection] executing Procedure
+[06/28/2016 5:53:06 PM][UpdateNotificationByInternalID] Before Dispose
+[06/28/2016 5:53:06 PM][UpdateNotificationByInternalID] After Dispose :True
+[06/28/2016 5:53:06 PM][UploadOpNotificationCollectionToSQLServer] After Calling UpdateNotificationByInternalID
+[06/28/2016 5:53:06 PM][Dispose] Starting Function

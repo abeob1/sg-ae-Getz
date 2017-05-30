@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<setup>
+  <FormLogin>
+    <Label_UserName>ชื่อผู้ใช้</Label_UserName>
+    <Label_Password>รหัสผ่าน</Label_Password>
+    <Button_Login>ล็อกอิน</Button_Login>
+    <Button_Cancel>ยกเลิก</Button_Cancel>
+  </FormLogin>
+  
+  <FormTestConnection>
+  </FormTestConnection>
+  
+  <FormMain>
+    <MessageConfirmSynchronization>ยืนยันการส่งผ่านข้อมูล</MessageConfirmSynchronization>
+    <MessageSynchronizedSuccess>การส่งผ่านข้อมูลสำเร็จแล้ว</MessageSynchronizedSuccess>
+    <MessageConfirmLogout>ยืนยันการออกจากระบบ</MessageConfirmLogout>
+    <MessageAreYouSure>คุณแน่ใจหรือไม่ ?</MessageAreYouSure>
+    <MessageFinish>ยืนยันการปิดงานซ่อมสำเร็จแล้ว, หากมีการรออะไหล่ กรุณาอย่าปิดงานนี้.</MessageFinish>
+    <MessageSuccessUpdateCheckList>ข้อมูลได้ถูกบันทึกแล้ว</MessageSuccessUpdateCheckList>
+    <TabNotificationDetail>รายละเอียด</TabNotificationDetail>
+    <TabTimelime>เวลา</TabTimelime>
+    <TabDamageCause>อาการเสีย / สาเหตุ</TabDamageCause>
+    <TabParts>อะไหล่</TabParts>
+    <TabChecklist>รายการตรวจซ่อม</TabChecklist>
+    <TabQuotation>เสนอราคา</TabQuotation>
+    <TabSummary>รวมรายการ</TabSummary>
+    <TabFinal>สรุป</TabFinal>
+    <TabSignOff>ลงชื่อ</TabSignOff>
+    <JobListing>รายการซ่อม</JobListing>
+    <Subject>รายการ</Subject>
+    <ActType>ชนิดงานซ่อม</ActType>
+    <Equipment>ชนิดเครื่อง</Equipment>
+    <EquipmentSnr>หมายเลขเครื่อง</EquipmentSnr>
+    <RelatedNotification>รายการซ่อมที่เกี่ยวข้อง</RelatedNotification>
+    <SoldTo>ชื่อลูกค้า</SoldTo>
+    <ServiceOrder>เลขที่ซ่อม</ServiceOrder>
+    <Priority>ลำดับความสำคัญ</Priority>
+    <EquipmentLocation>สถานที่ติดตั้งเครื่อง</EquipmentLocation>
+    <NotificationID>หมายเลขแจ้งซ่อม</NotificationID>
+    <SubjectColumnOnDatagrid>รายการ</SubjectColumnOnDatagrid>    
+    <DropdownAsc>จากมากไปน้อย</DropdownAsc>
+    <DropdownDesc>จากน้อยไปมาก</DropdownDesc>
+    <DropdownDate>วันที่</DropdownDate>
+    <DropdownSubject>หัวข้อ</DropdownSubject>
+    <ButtonFilter>กรอง</ButtonFilter>
+    <TooltipPartsOnVan>รายการอะไหล่ปัจจุบัน</TooltipPartsOnVan>
+    <TooltipTestConnection>ทดสอบการเชื่อมต่อ</TooltipTestConnection>
+    <TooltipSynchronize>เช่อมต่อข้อมูลกับ</TooltipSynchronize>
+    <TravelStartOnButton>เริ่มเดินทาง</TravelStartOnButton>
+    <TravelEndOnButton>เดินทางถึง</TravelEndOnButton>
+    <WaitingOnButton>เวลารอ</WaitingOnButton>
+    <JobStartOnButton>เวลาซ่อม</JobStartOnButton>
+    <JobEndOnButton>พักงาน</JobEndOnButton>
+    <FinishOnButton>ซ่อมเสร็จ</FinishOnButton>
+    <TravelStartOnLabel>เวลาเริ่มเดินทาง</TravelStartOnLabel>
+    <WaitingOnLable>เวลารอ</WaitingOnLable>
+    <JobStartOnLabel>เวลาซ่อม</JobStartOnLabel>
+    <Shared>มีช่างร่วม</Shared>
+    <TimelineHistory>เวลา</TimelineHistory>
+    <DateOnDataGrid>วันที่</DateOnDataGrid>
+    <DescriptOnDataGrid>รายการซ่อม</DescriptOnDataGrid>
+    <TravelOnGrid>เวลาเดินทาง</TravelOnGrid>
+    <WaitingOnGrid>เวลารอลูกค้า</WaitingOnGrid>
+    <JobOnGrid>เวลาซ่อมจริง</JobOnGrid>
+    <Damages>อาการ</Damages>
+    <DamageCodeOnGrid>รหัสอาการเสีย</DamageCodeOnGrid>
+    <DamageGroupOnGrid>กลุ่มอาการเสีย</DamageGroupOnGrid>
+    <DamageDescriptionOnGrid>รายละเอียดอาการเสีย</DamageDescriptionOnGrid>
+    <Causes>สาเหตุ</Causes>
+    <CauseCodeOnGrid>รหัสสาเหตุการเสีย</CauseCodeOnGrid>
+    <CauseGroupOnGrid>กลุ่มสาเหตุการเสีย</CauseGroupOnGrid>
+    <CauseDescriptionOnGrid>รายละเอียดสาเหตุการเสีย</CauseDescriptionOnGrid>
+    <PartNoOnDataGrid>รหัสอะไหล่</PartNoOnDataGrid>
+    <PartDescOnDataGrid>รายละเอียด</PartDescOnDataGrid>
+    <PartQuantityOnDataGrid>จำนวน</PartQuantityOnDataGrid>
+    <PartConsumedOnDataGrid>ใช้ไป</PartConsumedOnDataGrid>
+    <PartReservedOnDataGrid>จองไว้</PartReservedOnDataGrid>
+    <PartUnitOnDataGrid>หน่วย</PartUnitOnDataGrid>
+    <CheckListType>ชนิด</CheckListType>
+    <CheckList>รายละเอียดสาเหตุการเสีย</CheckList>
+    <TestResult>ผลการตรวจ</TestResult>
+    <ModelNoForCheckList>รุ่น</ModelNoForCheckList>
+    <NameForCheckList>ชื่อ</NameForCheckList>
+    <DepartmentForCheckList>ฝ่าย/แผนก</DepartmentForCheckList>
+    <SerialNoForCheckList>ผลการตรวจ</SerialNoForCheckList>
+    <QuotationNoOnGrid>เลขที่ใบเสนอราคา</QuotationNoOnGrid>
+    <QuotationRemarksOnGrid>หมายเหตุ</QuotationRemarksOnGrid>
+    <NotificationIDForSummary>หมายเลขแจ้งซ่อม</NotificationIDForSummary>
+    <SubjectForSummary>รายการ</SubjectForSummary>
+    <ActTypeForSummary>ชนิดงานซ่อม</ActTypeForSummary>
+    <SoldToForSummary>ชื่อลูกค้า</SoldToForSummary>
+    <TotalTravelTimeForSummary>เวลาเดินทางโดยรวม</TotalTravelTimeForSummary>
+    <TotalWorkingTimeForSummary>เวลาซ่อมงานโดยรวม</TotalWorkingTimeForSummary>
+    <TotalOverallTimeForSummary>เวลาที่ใช้ทั้งหมด</TotalOverallTimeForSummary>
+    <DamagesForSummary>อาการเสีย</DamagesForSummary>
+    <CausesForSummary>สาเหตุที่เสีย</CausesForSummary>
+    <PartsForSummary>รายการอะไหล่</PartsForSummary>
+    <TimelinesForSummary>รายการเวลา</TimelinesForSummary>
+    <JobDateForSummary>งานวันที่</JobDateForSummary>
+    <TravelStartForSummary>เวลาเริ่มเดินทาง</TravelStartForSummary>
+    <TravelEndForSummary>สิ้นสุดการเดินทาง</TravelEndForSummary>
+    <TotalTravelTimeTimelineForSummary>รวมเวลาเดินทาง</TotalTravelTimeTimelineForSummary>
+    <WaitingTimeForSumamry>เวลาที่รอลูกค้า</WaitingTimeForSumamry>
+    <JobStartForSummary>เวลาเริ่มงานซ่อม</JobStartForSummary>
+    <JobEndForSummary>เวลาที่ซ่อมเสร็จ</JobEndForSummary>
+    <TotalWorkingTimeForSummary>รวมเวลาซ่อมงาน</TotalWorkingTimeForSummary>
+    <FeedbackSentence>กรุณาให้คะแนนความพึงพอใจสำหรับการซ่อมครั้งนี้</FeedbackSentence>
+    <FeedbackForExcellent>ยอดเยี่ยม</FeedbackForExcellent>
+    <FeedbackForAboveExpectation>ดี</FeedbackForAboveExpectation>
+    <FeedbackForMeetExpectation>พอใช้</FeedbackForMeetExpectation>
+    <FeedbackForBelowExpectation>ต้องปรับปรุง</FeedbackForBelowExpectation>
+    <SignatureSentence>กรุณาลงลายมือเพื่อยืนยันสำหรับการซ่อมครั้งนี้</SignatureSentence>
+    <NameForSignOff>ชื่อ</NameForSignOff>
+    <ContactForSignOff>เบอร์ติดต่อ</ContactForSignOff>
+    <DesignationForSignOff>ตำแหน่ง</DesignationForSignOff>
+    <DepartmentForSignOff>ฝ่าย/แผนก</DepartmentForSignOff>
+    <SurvuyButton>แบบสำรวจ</SurvuyButton>
+    <ButtonTravelStart>เริ่มเดินทางกลับ</ButtonTravelStart>
+    <ButtonTravelEnd>สิ้นสุดการเดินทางกลับ</ButtonTravelEnd>
+  </FormMain>
+  
+  <FormAddEditDamage>
+    <AddDamage>เพิ่มอาการเสีย</AddDamage>
+    <EditDamage>แก้ไขอาการเสีย</EditDamage>
+    <Group>กลุ่ม</Group>
+    <Code>รหัส</Code>
+    <Description>รายละเอียด</Description>
+    <ValidateDescription>กรุณาใส่รายละเอียดอาการเสีย</ValidateDescription>
+    <MessageSuccess>บันทึกรายละเอียดอาการเสีย</MessageSuccess>
+  </FormAddEditDamage>
+  
+  <FormAddEditCause>
+    <AddCause>เพิ่มสาเหตุ</AddCause>
+    <EditCause>แก้ไขสาเหตุ</EditCause>
+    <Group>กลุ่ม</Group>
+    <Code>รหัส</Code>
+    <Description>รายละเอียด</Description>
+    <ValidateDescription>กรุณาใส่รายละเอียดสาเหตุการเสีย</ValidateDescription>
+    <MessageSuccess>บบันทึกรายละเอียดสาเหตุการเสีย</MessageSuccess>
+  </FormAddEditCause>
+  
+  <FormAddEditNewPart>
+    <AddNewPart>เพิ่มอะไหล่</AddNewPart>
+    <EditPart>แก้ไขรายการ</EditPart>
+    <PartNo>รหัสอะไหล่</PartNo>
+    <Or>หรือ</Or>
+    <Description>รายละเอียด</Description>
+    <Unit>หน่วย</Unit>
+    <Consumed>ใช้ไป</Consumed>
+    <Quantity>จำนวน</Quantity>
+    <Reserved>จองไว้</Reserved>
+    <MessageConfirmDelete>ยืนยันที่จะลบข้อมูลหรือไม่?</MessageConfirmDelete>
+  </FormAddEditNewPart>
+  
+  <FormAvailableParts>
+    <AvailableParts>จำนวนอะไหล่คงคลัง</AvailableParts>
+    <PartsNoOnDataGrid>รหัสอะไหล่</PartsNoOnDataGrid>
+    <OldPartOnDataGrid>รหัสอะไหล่เดิม</OldPartOnDataGrid>
+    <DescOnDataGrid>รายละเอียด</DescOnDataGrid>
+    <AvailableOnDataGrid>จำนวนที่มี</AvailableOnDataGrid>
+    <ReservedOnDataGrid>จองไว้</ReservedOnDataGrid>
+    <ConsumedOnDataGrid>ใช้ไป</ConsumedOnDataGrid>
+    <UOM>หน่วย</UOM>
+  </FormAvailableParts>
+  
+  <FormAddEditQuotation>
+    <ValidityPeriod>กำหนดระยะเวลา</ValidityPeriod>
+    <PaymentTerm>เงื่อนไขการจ่ายเงิน</PaymentTerm>
+    <DeliveryTerm>เงื่อนไขการส่งของ</DeliveryTerm>
+    <FreeDelivery>ไม่คิดค่าขนส่ง</FreeDelivery>
+    <Remarks>หมายเหตุ</Remarks>
+    <TotalPrice>ราคารวมทั้งหมด</TotalPrice>
+    <NoOnGrid>ลำดับ</NoOnGrid>
+    <MaterialDescOnGrid>รายการ</MaterialDescOnGrid>
+    <PartNoOnGrid>รหัสอะไหล่</PartNoOnGrid>
+    <QtyOnGrid>จำนวน</QtyOnGrid>
+    <UnitPriceOnGrid>ราคาต่อหน่วย</UnitPriceOnGrid>
+    <DiscountOnGrid>ส่วนลด (%)</DiscountOnGrid>
+    <TotalPriceOnGrid>ราคารวม</TotalPriceOnGrid>
+    <QuotationButton>ใบเสนอราคา</QuotationButton>
+    <TOSButton>เงื่อนไขการขาย</TOSButton>
+    <COD>ชำระเงินเมื่อส่งของ</COD>
+    <Days30>เครดิต 30 วัน</Days30>
+    <Days60>เครดิต 60 วัน</Days60>
+    <Days90>เครดิต 90 วัน</Days90>     
+    <MessageSuccess>ข้อมูลได้ถูกบันทึกแล้ว</MessageSuccess>
+  </FormAddEditQuotation>
+  
+  <FormPartHistory>
+    <ColumnForNotification>เลขที่ซ่อม</ColumnForNotification>
+    <ColumnForSubject>หัวข้อ</ColumnForSubject>
+    <ColumnForDamages>อาการเสีย</ColumnForDamages>
+    <ColumnForCauses>สาเหตุและการแก้ไข</ColumnForCauses>
+    <ColumnForParts>อะไหล่</ColumnForParts>
+  </FormPartHistory>
+  
+  <FormCustomerDetail>
+    <Name1>ชื่อ 1</Name1>
+    <Name2>ชื่อ 2</Name2>
+    <Address>ที่อยู่</Address>
+    <Tel>เบอร์โทร</Tel>
+    <Fax>เบอร์แฟกส์</Fax>
+  </FormCustomerDetail>
+    
+ </setup>

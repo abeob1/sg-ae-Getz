@@ -1,0 +1,370 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+}
+.HeaderDivider {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+.VerticalDivider {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999999;
+}
+.FormField {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.FormTextBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	background-color: #D7EBFF;
+	border: 1px solid #0066CC;
+}
+.SFormTextBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	height:15px;
+	background-color: #D7EBFF;
+	border: 1px solid #0066CC;
+}
+.FormButton {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	background-color: #DCEDED;
+	border: 1px solid #0066CC;
+}
+.FormTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+}
+.PageTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #333333;
+	background-color: #F2F7F7;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.PageHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	background-color: #F0F0F0;
+}
+.NormalBodyText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.FormBorder {
+	border: 1px solid #CCCCCC;
+}
+.GridViewHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #D5E3E3;
+}
+.GridViewItem {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #D2E6E6;
+}
+.GridViewAlertIndicator {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ff0000;
+	text-decoration: none;
+}
+.GridViewAlertIndicator:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ff0000;
+	text-decoration: none;
+}
+.GridViewAlertIndicator:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ff0000;
+	text-decoration: none;
+}
+.GridViewLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+a.GridViewLink:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+a.GridViewLink:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	text-decoration: none;	
+}
+.GridViewItemAlt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #CEDFDF;
+}
+.FormLineItem {
+	background-color: #E8F0E8;
+}
+.FormLineItemAlt {
+	background-color: #DBE8DB;
+}
+.TableResultCriteriaBar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	background-color: #DAE7DA;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.FormDropDown {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #D7EBFF;
+}
+.MessageError {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.MessageInformation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #006666;
+}
+.Greeting {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+}
+a.GridViewLink:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF6600;
+	text-decoration: underline;
+}
+a.GridViewLink:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+.DetailGridTextBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	background-color: #D2E6E6;
+	border: 1px solid #D2E6E6;
+}
+.FormButtonHighlightRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF0000;
+	background-color: #DCEDED;
+	border: 1px solid #0066CC;
+}
+.GridViewItemHighLightRed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #D2E6E6;
+	font-weight: bold;
+	color: #FF0000;
+}
+.DetailGridTextBoxNoEdit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF6600;
+	background-color: #D2E6E6;
+	border: 1px solid #D2E6E6;
+}
+.FormTextBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #EDF3ED;
+	border: 1px solid #0066CC;
+}
+.DetailGridButton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px solid #333333;
+}
+.ErrorBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF0000;
+	background-color: #FFFFC6;
+	border: 1px solid #FF6600;
+}
+.MessageBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #006633;
+	background-color: #DDEEFF;
+	border: 1px solid #003366;
+}
+.ValidatedErrorComponent {
+	color: #FF3300;
+	background-color: #FFFF99;
+	border: 2px solid #FF0000;
+	font-size: 11px;
+}
+
+
+.FooterPager {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+.GridViewLinkDisabled {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #D3D3D3;
+	text-decoration: none;
+}
+.HorizontalDevider {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999999;
+}
+.centered_div 
+{
+	background: url('img/calendar.gif')
+
+}
+
+.LinkInfo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #669966;
+	text-decoration: none;
+}
+a.LinkInfo:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #669966;
+}
+a.LinkInfo:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #669966;
+	text-decoration: none;
+}
+a.LinkInfo:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF9900;
+	text-decoration: none;
+}
+a.LinkInfo:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #669966;
+	text-decoration: none;
+}
+.Calendar
+{
+	overflow-y :scroll;
+	height:50px;
+}
+.DataGridHeader {
+	border-bottom-width: 1px;
+	border-bottom-style: groove;
+	border-bottom-color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+.DataGridRow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-color: #EEF3F9;
+	border-bottom-width: 1px;
+	border-bottom-style: double;
+	border-bottom-color: #CCCCCC;
+}
+.DataGridRowAlternate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-color: #DFEAF4;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+DataGridFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333333;
+	background-color: #F8FAFC;
+}
+.DataGridToolbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	background-color: #BED3E9;
+	border-bottom-width: 1px;
+	border-bottom-style: double;
+	border-bottom-color: #336699;
+}
+.FormTable {
+	border: 1px solid #333333;
+	background-color: #F8FAFC;
+}
+.CommonBodyContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+.CommonBodyContent2 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+}

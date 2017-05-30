@@ -1,0 +1,243 @@
+public class EngineerOutstandingCompletedJob : Page, IRequiresSessionState
+{
+    protected Button Button_Back;
+    protected Button Button_Display;
+    protected Button Button_Export;
+    protected DataObj CurPageDataObj = new DataObj();
+    private SessionConfig CurSessionConfig;
+    private string dbConnection = "";
+    private TypeOfDatabase dbType;
+    protected DropDownList ddl_Month;
+    protected DropDownList ddl_year;
+    protected DropDownList DropDownList_Engineer;
+    protected HtmlForm form1;
+    protected GridView GridViewResult;
+    protected HyperLink HyperLink_FileDownload;
+    protected Label Label_Engineer;
+    protected Label Label_Month;
+    protected Label Label_NoData;
+    protected Label Label_Year;
+
+    protected void Button_Back_Click(object sender, EventArgs e)
+    {
+        base.Response.Redirect("Main.aspx");
+    }
+
+    protected void Button_Display_Click(object sender, EventArgs e)
+    {
+        this.HyperLink_FileDownload.Visible = false;
+        this.LoadData();
+        if (this.ResultTable != null)
+        {
+            DataView view = new DataView(this.ResultTable);
+            this.GridViewResult.DataSource = view;
+            this.GridViewResult.DataBind();
+        }
+    }
+
+    protected void Button_Export_Click(object sender, EventArgs e)
+    {
+        if (this.ResultTable != null)
+        {
+            string str = "EngineerJob-" + DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + ".csv";
+            string responseMessage = "";
+            if (GenerateCSV(this.ResultTable, base.Server.MapPath("ReportsOutput") + @"\" + str, ref responseMessage))
+            {
+                this.HyperLink_FileDownload.Text = "Click here to download " + str;
+                this.HyperLink_FileDownload.NavigateUrl = "ReportsOutput/" + str;
+                this.HyperLink_FileDownload.Visible = true;
+            }
+        }
+    }
+
+    public static bool GenerateCSV(DataTable ResultTable, string path, ref string ResponseMessage)
+    {
+        bool flag = true;
+        StringBuilder builder = new StringBuilder();
+        StringBuilder builder2 = new StringBuilder();
+        try
+        {
+            if (ResultTable == null)
+            {
+                return flag;
+            }
+            foreach (DataColumn column in ResultTable.Columns)
+            {
+                builder2.Append(column.ColumnName + ",");
+            }
+            builder.AppendLine(builder2.ToString().Substring(0, builder2.ToString().Length - 1));
+            foreach (DataRow row in ResultTable.Rows)
+            {
+                builder2 = new StringBuilder();
+                foreach (DataColumn column2 in ResultTable.Columns)
+                {
+                    if (row[column2.ColumnName].ToString().IndexOf(",") >= 0)
+                    {
+                        builder2.Append("\"" + row[column2.ColumnName].ToString() + "\",");
+                    }
+                    else
+                    {
+                        builder2.Append(row[column2.ColumnName].ToString() + ",");
+                    }
+                }
+                builder.AppendLine(builder2.ToString().Substring(0, builder2.ToString().Length - 1));
+            }
+            SwissArmy.FileCreate(path, builder.ToString());
+        }
+        catch (Exception exception)
+        {
+            flag = false;
+            ResponseMessage = "[ReportsGenerator.GenerateCSV] : Exception : " + exception.Message;
+        }
+        return flag;
+    }
+
+    protected void LoadData()
+    {
+        this.Label_NoData.Visible = false;
+        using (OpNotificationManager manager = new OpNotificationManager(this.CurSessionConfig))
+        {
+            DataTable table = manager.GetOutstandingReport(this.ddl_year.SelectedValue, this.ddl_Month.SelectedValue, this.DropDownList_Engineer.SelectedValue);
+            if (table != null)
+            {
+                this.ResultTable = new DataTable();
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.MalfunctionDate, Type.GetType("System.String")));
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.NotificationNo, Type.GetType("System.String")));
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.NotificationSO, Type.GetType("System.String")));
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.CustomerName, Type.GetType("System.String")));
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.NotificationSubject, Type.GetType("System.String")));
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.EmployeeName, Type.GetType("System.String")));
+                this.ResultTable.Columns.Add(new DataColumn(this.CurPageDataObj.Status, Type.GetType("System.String")));
+                if (table.Rows.Count > 0)
+                {
+                    for (int i = 0; i < table.Rows.Count; i++)
+                    {
+                        DataRow row = this.ResultTable.NewRow();
+                        row[this.CurPageDataObj.MalfunctionDate] = table.Rows[i]["notification_requiredstart"];
+                        row[this.CurPageDataObj.NotificationNo] = table.Rows[i]["notification_no"];
+                        row[this.CurPageDataObj.NotificationSO] = table.Rows[i]["notification_so"];
+                        row[this.CurPageDataObj.CustomerName] = table.Rows[i]["cust_name1"];
+                        row[this.CurPageDataObj.NotificationSubject] = table.Rows[i]["notification_subject"];
+                        row[this.CurPageDataObj.EmployeeName] = table.Rows[i]["user_firstname"];
+                        row[this.CurPageDataObj.Status] = table.Rows[i]["master_desc"];
+                        this.ResultTable.Rows.Add(row);
+                    }
+                }
+                else
+                {
+                    this.Label_NoData.Visible = true;
+                }
+            }
+        }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        this.SessionCheck();
+        this.Label_NoData.Visible = false;
+        this.CurrentPageIndex = 0;
+        if (!base.IsPostBack)
+        {
+            this.PageComponentSetup();
+        }
+    }
+
+    protected void PageComponentSetup()
+    {
+        string text = Convert.ToString((int) (DateTime.Now.Year - 1));
+        string str2 = Convert.ToString(DateTime.Now.Year);
+        string str3 = Convert.ToString((int) (DateTime.Now.Year + 1));
+        this.ddl_year.Items.Add(new ListItem(text, text));
+        this.ddl_year.Items.Add(new ListItem(str2, str2));
+        this.ddl_year.Items.Add(new ListItem(str3, str3));
+        this.ddl_Month.Items.Add(new ListItem("1", "1"));
+        this.ddl_Month.Items.Add(new ListItem("2", "2"));
+        this.ddl_Month.Items.Add(new ListItem("3", "3"));
+        this.ddl_Month.Items.Add(new ListItem("4", "4"));
+        this.ddl_Month.Items.Add(new ListItem("5", "5"));
+        this.ddl_Month.Items.Add(new ListItem("6", "6"));
+        this.ddl_Month.Items.Add(new ListItem("7", "7"));
+        this.ddl_Month.Items.Add(new ListItem("8", "8"));
+        this.ddl_Month.Items.Add(new ListItem("9", "9"));
+        this.ddl_Month.Items.Add(new ListItem("10", "10"));
+        this.ddl_Month.Items.Add(new ListItem("11", "11"));
+        this.ddl_Month.Items.Add(new ListItem("12", "12"));
+        using (UserManager manager = new UserManager(this.CurSessionConfig))
+        {
+            ApplicationUserCollection masterUsers = manager.GetMasterUsers();
+            if ((masterUsers != null) && (masterUsers.Count > 0))
+            {
+                foreach (ApplicationUser user in masterUsers)
+                {
+                    this.DropDownList_Engineer.Items.Add(new ListItem(user.UserID, user.UserID));
+                }
+                this.DropDownList_Engineer.Items.Add(new ListItem("All", "All"));
+            }
+        }
+    }
+
+    public void SessionCheck()
+    {
+        if (this.Session["CurSessionConfig"] != null)
+        {
+            this.CurSessionConfig = (SessionConfig) this.Session["CurSessionConfig"];
+        }
+        else
+        {
+            this.dbConnection = ConfigurationManager.AppSettings["swordfish_v1_ConnectionString"];
+            this.CurSessionConfig = new SessionConfig(this.dbType, this.dbConnection);
+            this.Session["CurSessionConfig"] = this.CurSessionConfig;
+        }
+    }
+
+    protected HttpApplication ApplicationInstance
+    {
+        get
+        {
+            return this.Context.ApplicationInstance;
+        }
+    }
+
+    protected int CurrentPageIndex
+    {
+        get
+        {
+            return (int) this.ViewState["CurrentPageIndex"];
+        }
+        set
+        {
+            this.ViewState["CurrentPageIndex"] = value;
+        }
+    }
+
+    protected DefaultProfile Profile
+    {
+        get
+        {
+            return (DefaultProfile) this.Context.Profile;
+        }
+    }
+
+    protected DataTable ResultTable
+    {
+        get
+        {
+            return (DataTable) this.ViewState["ResultTable"];
+        }
+        set
+        {
+            this.ViewState["ResultTable"] = value;
+        }
+    }
+
+    protected class DataObj
+    {
+        public readonly string CustomerName = "CustomerName";
+        public readonly string EmployeeName = "EmployeeName";
+        public readonly string MalfunctionDate = "MalfunctionDate";
+        public readonly string NotificationNo = "NotificationNo";
+        public readonly string NotificationSO = "NotificationSO";
+        public readonly string NotificationSubject = "NotificationSubject";
+        public readonly string Status = "Status";
+    }
+}

@@ -1,0 +1,220 @@
+body {
+	margin: 0px;
+	background-color: #F9F9FF;
+}
+.PageHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	background-color: #F0F0F0;
+}
+.FrameBorderBlack {
+	border: 1px solid #333333;
+}
+.DataGridToolbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	background-color: #BED3E9;
+	border-bottom-width: 1px;
+	border-bottom-style: double;
+	border-bottom-color: #336699;
+}
+.FormElement {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #F7F7FB;
+	border: 1px solid #6699CC;
+}
+.DataGridHeader {
+	border-bottom-width: 1px;
+	border-bottom-style: groove;
+	border-bottom-color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+.DataGridRow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-color: #EEF3F9;
+	border-bottom-width: 1px;
+	border-bottom-style: double;
+	border-bottom-color: #CCCCCC;
+}
+.DataGridRowAlternate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	background-color: #DFEAF4;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.DataGridLink {
+	color: #006699;
+	text-decoration: none;
+}
+a.DataGridLink:link {
+	color: #006699;
+	text-decoration: none;
+}
+a.DataGridLink:visited {
+	color: #006699;
+	text-decoration: none;
+}
+a.DataGridLink:hover {
+	color: #FF9900;
+	text-decoration: underline;
+}
+a:active {
+	color: #006699;
+	text-decoration: none;
+}
+DataGridFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333333;
+	background-color: #F8FAFC;
+}
+.DataGridFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	background-color: #F8FAFC;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333333;
+}
+.FormSectionTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #E1E1FF;
+}
+.FormTable {
+	border: 1px solid #333333;
+	background-color: #F8FAFC;
+}
+.FormFieldName {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+.PageSeparator {
+	border: 1px dotted #666666;
+	letter-spacing: 2em;
+	word-spacing: 1em;
+	white-space: normal;
+}
+.CommonBodyContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.CommonBodyContent2 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+}
+.FormRowSeparator {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.BodyContentBorder {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+}
+.FormFieldNameLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+a.FormFieldNameLink:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #333333;
+}
+a.FormFieldNameLink:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #333333;
+}
+a.FormFieldNameLink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	color: #FF9900;
+}
+a.FormFieldNameLink:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #333333;
+}
+a.DataGridFooterLink:link {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #333333;
+}
+a.DataGridFooterLink:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+a.DataGridFooterLink:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF9900;
+	text-decoration: underline;
+}
+a.DataGridFooterLink:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+}
+.DataGridFooterLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+}
+.HeaderImage {
+	background-image: url(img/header.jpg);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+	height: 80px;
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+}
+.WarningText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF3300;
+}

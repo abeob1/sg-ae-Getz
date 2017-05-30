@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8" />
+<title>Getz  Mobile Service</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="css/style-metro.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/style-responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+<link href="plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+
+<!-- Setup Core Objects -->
+<script src="scripts/core_obj.js" type="text/javascript"></script>
+<script src="scripts/core_sys.js" type="text/javascript"></script>
+<script src="scripts/core_ws.js" type="text/javascript"></script>
+
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link href="css/pages/login.css" rel="stylesheet"
+	type="text/css" />
+<!-- END PAGE LEVEL STYLES -->
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="login">
+	<!-- BEGIN LOGO -->
+	<div class="logo">
+		<!-- For JJ logo <img src="img/logo_tech_220px.gif" alt="" /> -->
+		
+		<!-- for getz logo  -->
+		<img src="img/logo_getz.jpg" alt="" /> 
+		
+	</div>
+	<!-- END LOGO -->
+	<!-- BEGIN LOGIN -->
+	<div class="content">
+		<!-- BEGIN LOGIN FORM -->
+		<form class="form-vertical login-form" >
+			<h3 class="form-title">Login to your account</h3>
+			<div class="alert alert-error hide">
+				<button class="close" data-dismiss="alert"></button>
+				<span>Enter any username and passowrd.</span>
+			</div>
+			<div class="alert alert-user-not-found hide">
+				<button class="close" data-dismiss="alert"></button>
+				<span>Please enter correct username and password.</span>
+			</div>
+			
+			<div class="control-group">
+				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+				<label id="label_username" class="control-label visible-ie8 visible-ie9">Username</label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-user"></i> 
+						<input class="m-wrap placeholder-no-fix" type="text" placeholder="Username" name="username" onKeyPress="return isval(event)"  id="Textbox_LoginID" />
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label id="label_password" class="control-label visible-ie8 visible-ie9">Password</label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-lock"></i> 
+						<input class="m-wrap placeholder-no-fix" type="password" placeholder="Password" name="password" id="Textbox_Password" />
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+			<div class="control-group">
+
+				<div class="controls">
+
+					<div class="input-icon left">
+
+						<select id="dropdown_lang" onChange="SelectedLanguageChange()" class="m-wrap span12">
+							<option value="en">English</option>
+							<option value="th">Thailand</option>
+							<option value="id">Bahasa Indonesia</option>
+							<option value="vi">Vietnamese</option>
+
+						</select>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="form-actions">
+
+				<button id="Button_Login" type="submit" class="btn green pull-right">
+					Login <i class="m-icon-swapright m-icon-white"></i>
+				</button>
+			</div>
+
+		 <div class="controls">
+		 	<label id="release_version" class="control-label"></label>
+		 	<label id="ws_connection_url" class="control-label"></label>
+		</div>
+		
+		
+		
+		</form>
+		
+		<div class="" align="center">
+
+				<button id="Button_exit" type="submit" class="btn green" >
+					Exit  <i class="m-icon-swapright m-icon-white"></i>
+				</button>
+			</div>
+		<!-- END LOGIN FORM -->
+
+
+	</div>
+	<!-- END LOGIN -->
+	<!-- BEGIN COPYRIGHT -->
+
+
+
+	<!-- END COPYRIGHT -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->
+	<script src="plugins/jquery-1.8.3.min.js"
+		type="text/javascript"></script>
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script
+		src="plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js"
+		type="text/javascript"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"
+		type="text/javascript"></script>
+	<!--[if lt IE 9]>
+  <script src="plugins/excanvas.js"></script>
+  <script src="plugins/respond.js"></script> 
+  <![endif]-->
+	<script src="plugins/breakpoints/breakpoints.js"
+		type="text/javascript"></script>
+	<!-- IMPORTANT! jquery.slimscroll.min.js depends on jquery-ui-1.10.1.custom.min.js -->
+	<script
+		src="plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="plugins/jquery.blockui.js" type="text/javascript"></script>
+	<script src="plugins/jquery.cookie.js" type="text/javascript"></script>
+	<script src="plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+	<!-- END CORE PLUGINS -->
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script
+		src="plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL PLUGINS -->
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+	<script src="scripts/app.js" type="text/javascript"></script>
+	<script src="scripts/login.js" type="text/javascript"></script>
+	
+	<script src="cordova.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8" src="SQLitePlugin.js"></script>
+	
+
+<script>
+
+    jQuery(document).ready(function() {     
+      
+    	App.init();
+      
+    	Login.init();
+      
+    	Load_ws_url(); 
+    	
+    	Load_release_version();
+      
+    });
+    
+</script>
+  	
+  	
+ <script type="text/javascript" charset="utf-8">
+    
+	function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);                
+    }
+    
+	function onBackKeyDown() {	
+		// do nothing
+		// lock the android back button
+    }
+    
+    onLoad();
+    
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+ 
+ var LoginUserInternalID = "";
+ 
+ function isval(a)
+ {
+	 var charCode = (a.which) ? a.which : a.keyCode
+			    if (charCode == 95) {
+			    	alert("_ Is not allowed in Username");
+			        return false;
+			    }
+			    return true;
+ }
+ 
+ $("#Button_Login").click(function() {
+
+	 //var db = window.sqlitePlugin.openDatabase({name: "swordfish_db"});
+	 var db = window.sqlitePlugin.openDatabase("swordfish_db", "");
+	 db.transaction(queryDB, errorCB);
+
+ });  
+ 
+ $("#Button_exit").click(function() {
+
+	 navigator.app.exitApp();
+
+ });  
+ 
+ 
+ 
+ 
+ 
+
+ function queryDB(tx) {
+	
+     tx.executeSql("SELECT * from master_users where user_firstname = '"+ $("#Textbox_LoginID").val() +"' and user_password = '"+ $("#Textbox_Password").val() +"' and user_active='1';", [], querySuccess, errorCB);
+
+ }
+
+ function querySuccess(tx, results) {
+	 var len = results.rows.length;
+	 
+	 if(len==1){
+		 window.location.href = "index.html?uid=" + results.rows.item(0).user_id + "&lid=" + $("#dropdown_lang").val();		 
+	 } else {
+		 $('.alert-error', $('.login-form')).hide();
+		 $('.alert-user-not-found', $('.login-form')).show();
+		 
+		 
+	 }
+	 
+
+ }
+
+ function errorCB(tx, err) {
+	
+     alert("Error processing SQL: "+err);
+ }
+
+ 
+ function SelectedLanguageChange(){
+	 
+	 if ($("#dropdown_lang").val() != "en"){
+	        
+		 //here to load xml
+		 // Switch Languages
+		    
+		 $.ajax({
+			 type: "GET",
+			 url: "lang/uilang-" + $("#dropdown_lang").val() + ".xml",		      
+			 dataType: "xml",
+			 success: SwitchLanguage
+		 }); 
+	 }
+	 else{
+		 $("#label_username").text("Username: ");                
+	     $("#label_password").text("Password: ");
+	     $("#Button_Login").html("Login "); 
+	 }
+	 
+ }
+ 
+ function SwitchLanguage (ResultInXML) {
+	    
+     $("#label_username").text($(ResultInXML).find("Label_UserName").text());                
+     $("#label_password").text($(ResultInXML).find("Label_Password").text());
+     $("#Button_Login").html($(ResultInXML).find("Button_Login").text()); 
+    
+ }
+ 
+ 
+ </script>
+
+
+	<!-- END PAGE LEVEL SCRIPTS -->
+
+  
+
+
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

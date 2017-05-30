@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ProjectGuid>{F580F027-D0ED-4AFE-A13E-45D2EE685C6B}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="App_Code" />
+    <Reference Include="App_Web_-e2expts" />
+    <Reference Include="App_Web_-qxqzrad" />
+    <Reference Include="App_Web_1jthxuc7" />
+    <Reference Include="App_Web_1mktbgep" />
+    <Reference Include="App_Web_3vnrym8n" />
+    <Reference Include="App_Web_9izby_gy" />
+    <Reference Include="App_Web_9kjepl4a" />
+    <Reference Include="App_Web_ewdx3kp-" />
+    <Reference Include="App_Web_f7bmyyej" />
+    <Reference Include="App_Web_fwq0quka" />
+    <Reference Include="App_Web_gtmek9wk" />
+    <Reference Include="App_Web_hftvk7cg" />
+    <Reference Include="App_Web_iyp74zda" />
+    <Reference Include="App_Web_jm28i4ig" />
+    <Reference Include="App_Web_k1ykey7x" />
+    <Reference Include="App_Web_kd-nhhlg" />
+    <Reference Include="App_Web_mtzr3o64" />
+    <Reference Include="App_Web_mulcvzfb" />
+    <Reference Include="App_Web_nnvpjwcy" />
+    <Reference Include="App_Web_sjfyb_rz" />
+    <Reference Include="App_Web_ssnc7kcw" />
+    <Reference Include="App_Web_ujmtl5mh" />
+    <Reference Include="App_Web_vea50bgi" />
+    <Reference Include="App_Web_woo3mjrc" />
+    <Reference Include="App_Web_z7h-vqbw" />
+    <Reference Include="Jamila2">
+      <HintPath>..\bin\Jamila2.dll</HintPath>
+    </Reference>
+    <Reference Include="Jamila2" />
+    <Reference Include="Jamila_1.0" />
+    <Reference Include="Microsoft.Ink" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Swordfish_v2_Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="*.cs" />
+    <Compile Include="Swordfish_v2_Core\CoreElements\*.cs" />
+    <Compile Include="Swordfish_v2_Core\CoreManagers\*.cs" />
+  </ItemGroup>
+  <Import Condition="" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

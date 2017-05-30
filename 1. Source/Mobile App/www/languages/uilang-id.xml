@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<setup>
+	<FormLogin>
+		<Label_UserName>Nama Pengguna</Label_UserName>
+		<Label_Password>Kata Sandi</Label_Password>
+		<Button_Login>Masuk</Button_Login>
+		<Button_Cancel>Batal</Button_Cancel>
+	</FormLogin>
+	
+	<FormTestConnection>
+	</FormTestConnection>
+
+	<FormMain>
+		<MessageConfirmSynchronization>Apakah anda yakin untuk melakukan sinkronisasi</MessageConfirmSynchronization>
+		<MessageSynchronizedSuccess>Sinkronisasi data berhasil</MessageSynchronizedSuccess>
+		<MessageConfirmLogout>Apakah anda yakin ingin keluar?</MessageConfirmLogout>
+    <MessageAreYouSure>Apakah anda yakin?</MessageAreYouSure>
+    <MessageFinish></MessageFinish>
+    <MessageSuccessUpdateCheckList></MessageSuccessUpdateCheckList>
+		<TabNotificationDetail>Notifikasi</TabNotificationDetail>
+		<TabTimelime>Waktu</TabTimelime>
+		<TabDamageCause>Kerusakan / Penyebab</TabDamageCause>
+		<TabParts>Suku cadang</TabParts>
+		<TabChecklist>Checklist</TabChecklist>
+		<TabQuotation>Quotation</TabQuotation>
+		<TabSummary>Ringkasan</TabSummary>
+		<TabFinal>Final</TabFinal>
+		<TabSignOff>Sign Off</TabSignOff>
+    <JobListing>Daftar Pekerjaan</JobListing>
+    <Subject>Subyek</Subject>
+    <ActType>Tipe Aktifitas</ActType>
+    <Equipment>Peralatan</Equipment>
+    <EquipmentSnr>Nomor Serial</EquipmentSnr>
+    <RelatedNotification>NOtification Terkait</RelatedNotification>
+    <SoldTo>Pelanggan</SoldTo>
+    <ServiceOrder>Service Order</ServiceOrder>
+    <Priority>Prioritas</Priority>
+    <EquipmentLocation>Instalasi</EquipmentLocation>
+    <NotificationID>Nomor Ticket</NotificationID>
+    <SubjectColumnOnDatagrid>Daftar Ticket</SubjectColumnOnDatagrid>
+    <DropdownAsc></DropdownAsc>
+    <DropdownDesc></DropdownDesc>
+    <DropdownDate></DropdownDate>
+    <DropdownSubject></DropdownSubject>
+    <ButtonFilter></ButtonFilter>
+    <TooltipPartsOnVan></TooltipPartsOnVan>
+    <TooltipTestConnection></TooltipTestConnection>
+    <TooltipSynchronize></TooltipSynchronize>       
+    <TravelStartOnButton>Mulai Perjalananan</TravelStartOnButton>
+    <TravelEndOnButton></TravelEndOnButton>
+    <WaitingOnButton>Tunggu</WaitingOnButton>
+    <JobStartOnButton>Mulai Pekerjaan</JobStartOnButton>
+    <JobEndOnButton>Akhir Pekerjaan</JobEndOnButton>
+    <FinishOnButton>Selesai</FinishOnButton>
+    <TravelStartOnLabel>Perjalanan</TravelStartOnLabel>
+    <WaitingOnLable>Waktu Tunggu</WaitingOnLable>
+    <JobStartOnLabel>Waktu Kerja</JobStartOnLabel>
+    <Shared>Shared</Shared>
+    <TimelineHistory>Daftar </TimelineHistory>
+    <DateOnDataGrid>Tanggal</DateOnDataGrid>
+    <DescriptOnDataGrid>Keterangan</DescriptOnDataGrid>
+    <TravelOnGrid>Perjalanan</TravelOnGrid>
+    <WaitingOnGrid>Waktu Tunggu</WaitingOnGrid>
+    <JobOnGrid>Waktu Kerja</JobOnGrid>
+    <Damages>Kerusakan</Damages>
+    <DamageCodeOnGrid></DamageCodeOnGrid>
+    <DamageGroupOnGrid></DamageGroupOnGrid>
+    <DamageDescriptionOnGrid></DamageDescriptionOnGrid>        
+    <Causes>Penyebab</Causes>
+    <CauseCodeOnGrid></CauseCodeOnGrid>
+    <CauseGroupOnGrid></CauseGroupOnGrid>
+    <CauseDescriptionOnGrid></CauseDescriptionOnGrid>
+    <PartNoOnDataGrid>Part No</PartNoOnDataGrid>
+    <PartDescOnDataGrid>Deskripsi</PartDescOnDataGrid>
+    <PartQuantityOnDataGrid>Total Jumlah</PartQuantityOnDataGrid>
+    <PartConsumedOnDataGrid>Total dipakai</PartConsumedOnDataGrid>
+    <PartReservedOnDataGrid>Total reserved</PartReservedOnDataGrid>
+    <PartUnitOnDataGrid>Unit</PartUnitOnDataGrid>
+    <CheckListType>Tipe</CheckListType>
+    <CheckList>Check List</CheckList>
+    <TestResult>Hasil Test</TestResult>
+    <ModelNoForCheckList></ModelNoForCheckList>
+    <NameForCheckList></NameForCheckList>
+    <DepartmentForCheckList></DepartmentForCheckList>
+    <SerialNoForCheckList></SerialNoForCheckList>
+    <QuotationNoOnGrid></QuotationNoOnGrid>
+    <QuotationRemarksOnGrid></QuotationRemarksOnGrid>
+    <NotificationIDForSummary>Notification Id</NotificationIDForSummary>
+    <SubjectForSummary>Deskripsi</SubjectForSummary>
+    <ActTypeForSummary>Activity Type</ActTypeForSummary>
+    <SoldToForSummary>Pelanggan</SoldToForSummary>
+    <TotalTravelTimeForSummary>Total Perjalanan</TotalTravelTimeForSummary>
+    <TotalWorkingTimeForSummary>Total Kerja</TotalWorkingTimeForSummary>
+    <TotalOverallTimeForSummary>Total </TotalOverallTimeForSummary>
+    <DamagesForSummary>Kerusakan</DamagesForSummary>
+    <CausesForSummary>Penyebab</CausesForSummary>
+    <PartsForSummary>Parts</PartsForSummary>
+    <TimelinesForSummary>Timeline</TimelinesForSummary>
+    <JobDateForSummary>Waktu kerja</JobDateForSummary>
+    <TravelStartForSummary>Mulai Perjalanan </TravelStartForSummary>
+    <TravelEndForSummary>Akhir Perjalanan</TravelEndForSummary>
+    <TotalTravelTimeTimelineForSummary>Total Waktu Perjalanan</TotalTravelTimeTimelineForSummary>
+    <WaitingTimeForSumamry>Waktu Tunggu</WaitingTimeForSumamry>
+    <JobStartForSummary>Mulai Kerja</JobStartForSummary>
+    <JobEndForSummary>Akhir Kerja</JobEndForSummary>
+    <TotalWorkingTimeForSummary>Waktu Kerja</TotalWorkingTimeForSummary>
+    <FeedbackSentence>Feedback</FeedbackSentence>
+    <FeedbackForExcellent>Sangat Baik</FeedbackForExcellent>
+    <FeedbackForAboveExpectation>Baik</FeedbackForAboveExpectation>
+    <FeedbackForMeetExpectation>Cukup</FeedbackForMeetExpectation>
+    <FeedbackForBelowExpectation>Buruk</FeedbackForBelowExpectation>
+    <SignatureSentence>Tanda Tangan</SignatureSentence>
+    <NameForSignOff></NameForSignOff>
+    <ContactForSignOff></ContactForSignOff>
+    <DesignationForSignOff></DesignationForSignOff>
+    <DepartmentForSignOff></DepartmentForSignOff>
+    <SurvuyButton></SurvuyButton>
+    <ButtonTravelStart></ButtonTravelStart>
+    <ButtonTravelEnd></ButtonTravelEnd>            
+	</FormMain>
+
+  <FormAddEditDamage>
+    <AddDamage>Tambah</AddDamage>
+    <EditDamage>Ubah</EditDamage>
+    <Group>Group</Group>
+    <Code>Kode</Code>
+    <Description>Deskripsi</Description>
+    <ValidateDescription></ValidateDescription>
+    <MessageSuccess></MessageSuccess>    
+  </FormAddEditDamage>
+
+  <FormAddEditCause>
+    <AddCause>Tambah</AddCause>
+    <EditCause>Ubah</EditCause>
+    <Group>Group</Group>
+    <Code>Kode</Code>
+    <Description>Deskripsi</Description>  
+    <ValidateDescription></ValidateDescription>
+    <MessageSuccess></MessageSuccess>
+  </FormAddEditCause>
+
+  <FormAddEditNewPart>
+    <AddNewPart>Tambah</AddNewPart>
+    <EditPart>Ubah</EditPart>
+    <PartNo>Part No</PartNo>
+    <Or>Atau</Or>
+    <Description>Deskripsi</Description>
+    <Unit>Unit</Unit>
+    <Consumed>Pakai</Consumed>
+    <Quantity>Total</Quantity>
+    <Reserved>Dipesan</Reserved>
+    <MessageConfirmDelete></MessageConfirmDelete>
+  </FormAddEditNewPart>
+
+  <FormAvailableParts>
+    <AvailableParts>Tersedia</AvailableParts>
+    <PartsNoOnDataGrid>Part No</PartsNoOnDataGrid>
+    <OldPartOnDataGrid>Part No (lama)</OldPartOnDataGrid>
+    <DescOnDataGrid>Deskripsi</DescOnDataGrid>
+    <AvailableOnDataGrid>Tersedia</AvailableOnDataGrid>
+    <ReservedOnDataGrid>Dipesan</ReservedOnDataGrid>
+    <ConsumedOnDataGrid>Dipakai</ConsumedOnDataGrid>
+    <UOM>หน่วย</UOM>    
+  </FormAvailableParts>
+
+  <FormAddEditQuotation>
+    <ValidityPeriod>Masa Berlaku</ValidityPeriod>
+    <PaymentTerm>Kondisi Pembayaran</PaymentTerm>
+    <DeliveryTerm>Kondisi Pengiriman</DeliveryTerm>
+    <FreeDelivery>Bebas biaya kirim</FreeDelivery>
+    <Remarks>Keterangan</Remarks>
+    <TotalPrice>Harga Total</TotalPrice>
+    <NoOnGrid>No</NoOnGrid>
+    <MaterialDescOnGrid>Material</MaterialDescOnGrid>
+    <PartNoOnGrid>Part No</PartNoOnGrid>
+    <QtyOnGrid>Jumlah</QtyOnGrid>
+    <UnitPriceOnGrid>Kurs</UnitPriceOnGrid>
+    <DiscountOnGrid>Diskon (%)</DiscountOnGrid>
+    <TotalPriceOnGrid>Total Harga</TotalPriceOnGrid>
+    <QuotationButton>Quotation</QuotationButton>
+    <TOSButton>Print Term Of Services</TOSButton>
+    <COD>Cash On Delivery</COD>
+    <Days30>30 Hari dari Tanggal Pembayaran</Days30>
+    <Days60>60 Hari dari Tanggal Pembayaran</Days60>
+    <Days90>90 Hari dari Tanggal Pembayaran</Days90>
+    <MessageSuccess></MessageSuccess>
+  </FormAddEditQuotation>
+  
+  <FormPartHistory>
+    <ColumnForNotification></ColumnForNotification>
+    <ColumnForSubject></ColumnForSubject>
+    <ColumnForDamages></ColumnForDamages>
+    <ColumnForCauses></ColumnForCauses>
+    <ColumnForParts></ColumnForParts>
+  </FormPartHistory>
+  
+  <FormCustomerDetail>
+    <Name1></Name1>
+    <Name2></Name2>
+    <Address></Address>
+    <Tel></Tel>
+    <Fax></Fax>
+  </FormCustomerDetail>  
+  
+</setup>

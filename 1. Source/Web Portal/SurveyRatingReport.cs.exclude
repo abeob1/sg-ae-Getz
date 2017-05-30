@@ -1,0 +1,111 @@
+public class SurveyRatingReport : Page, IRequiresSessionState
+{
+    protected Button Back;
+    protected CrystalReportViewer crystalReportViewer;
+    protected DropDownList ddl_dchannel;
+    protected DropDownList ddl_Month;
+    protected DropDownList ddl_plant;
+    protected DropDownList ddl_year;
+    protected Button display;
+    protected HtmlForm form1;
+    protected Label Label_Month;
+    protected Label Label_Year;
+    private ReportDocument reportDocument;
+    private string SelectedYear = "";
+
+    protected void back_click(object sender, EventArgs e)
+    {
+        base.Response.Redirect("Main.aspx");
+    }
+
+    private void ConfigureCrystalReports()
+    {
+    }
+
+    protected void display_Click(object sender, EventArgs e)
+    {
+        ReportDocument document = new ReportDocument();
+        ParameterField field = new ParameterField();
+        ParameterFields fields = new ParameterFields();
+        ParameterDiscreteValue value2 = new ParameterDiscreteValue();
+        field.set_Name("@Year");
+        value2.set_Value(this.ddl_year.SelectedValue);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        field = new ParameterField();
+        field.set_Name("@Month");
+        value2 = new ParameterDiscreteValue();
+        value2.set_Value(this.ddl_Month.SelectedValue);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        field = new ParameterField();
+        field.set_Name("@DChannel");
+        value2 = new ParameterDiscreteValue();
+        value2.set_Value(this.ddl_dchannel.SelectedValue);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        field = new ParameterField();
+        field.set_Name("@Plant");
+        value2 = new ParameterDiscreteValue();
+        value2.set_Value(this.ddl_plant.SelectedValue);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        this.crystalReportViewer.set_ParameterFieldInfo(fields);
+        string str = base.Server.MapPath("Reports/SurveyRatingReport.rpt");
+        document.Load(str);
+        document.SetDatabaseLogon(SystemInformation.GeneralVariables.DatabaseUserID, SystemInformation.GeneralVariables.DatabasePassword, SystemInformation.GeneralVariables.DatabaseServer, SystemInformation.GeneralVariables.DatabaseName, false);
+        this.Session["reportDocument"] = document;
+        this.crystalReportViewer.set_ReportSource(document);
+    }
+
+    private void Page_Init(object sender, EventArgs e)
+    {
+        this.ConfigureCrystalReports();
+        if (!base.IsPostBack)
+        {
+            string text = Convert.ToString((int) (DateTime.Now.Year - 1));
+            string str2 = Convert.ToString(DateTime.Now.Year);
+            string str3 = Convert.ToString((int) (DateTime.Now.Year + 1));
+            this.ddl_year.Items.Add(new ListItem(text, text));
+            this.ddl_year.Items.Add(new ListItem(str2, str2));
+            this.ddl_year.Items.Add(new ListItem(str3, str3));
+            this.ddl_Month.Items.Add(new ListItem("1", "1"));
+            this.ddl_Month.Items.Add(new ListItem("2", "2"));
+            this.ddl_Month.Items.Add(new ListItem("3", "3"));
+            this.ddl_Month.Items.Add(new ListItem("4", "4"));
+            this.ddl_Month.Items.Add(new ListItem("5", "5"));
+            this.ddl_Month.Items.Add(new ListItem("6", "6"));
+            this.ddl_Month.Items.Add(new ListItem("7", "7"));
+            this.ddl_Month.Items.Add(new ListItem("8", "8"));
+            this.ddl_Month.Items.Add(new ListItem("9", "9"));
+            this.ddl_Month.Items.Add(new ListItem("10", "10"));
+            this.ddl_Month.Items.Add(new ListItem("11", "11"));
+            this.ddl_Month.Items.Add(new ListItem("12", "12"));
+            this.ddl_plant.Items.Add(new ListItem("320", "320"));
+            this.ddl_plant.Items.Add(new ListItem("820", "820"));
+            this.ddl_dchannel.Items.Add(new ListItem("3I", "3I"));
+            this.ddl_dchannel.Items.Add(new ListItem("3O", "3O"));
+            this.ddl_dchannel.Items.Add(new ListItem("3S", "3S"));
+        }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+
+    protected HttpApplication ApplicationInstance
+    {
+        get
+        {
+            return this.Context.ApplicationInstance;
+        }
+    }
+
+    protected DefaultProfile Profile
+    {
+        get
+        {
+            return (DefaultProfile) this.Context.Profile;
+        }
+    }
+}

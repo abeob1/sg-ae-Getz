@@ -1,0 +1,1 @@
+C:\inetpub\wwwroot\GetzWeb\swordfish_core_v2\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache

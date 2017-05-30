@@ -1,0 +1,25 @@
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\bin\JJTM_SyncWebService.dll
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\bin\JJTM_SyncWebService.pdb
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\obj\Debug\JJTM_SyncWebService.csprojResolveAssemblyReference.cache
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\obj\Debug\JJTM_SyncWebService.dll
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\obj\Debug\JJTM_SyncWebService.pdb
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\bin\Swordfish_v2_Core.dll
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\bin\Jamila2.dll
+C:\webapps\Swordfish\JJTM_SyncWebService\JJTM_SyncWebService\bin\Swordfish_v2_Core.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\bin\JJTM_SyncWebService.dll
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\bin\JJTM_SyncWebService.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\bin\Swordfish_v2_Core.dll
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\bin\Jamila2.dll
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\bin\Swordfish_v2_Core.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\bin\Jamila2.pdb
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\obj\Debug\JJTM_SyncWebService.dll
+C:\Users\junming_wong\Desktop\jjtm_swordfish\JJTM_SyncWebService_live\obj\Debug\JJTM_SyncWebService.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\bin\JJTM_SyncWebService.dll
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\bin\JJTM_SyncWebService.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\bin\Swordfish_v2_Core.dll
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\bin\Jamila2.dll
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\bin\Swordfish_v2_Core.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\bin\Jamila2.pdb
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\obj\Debug\JJTM_SyncWebService.csprojResolveAssemblyReference.cache
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\obj\Debug\JJTM_SyncWebService.dll
+E:\Abeo-Projects\getz\Existing Source Code Version2\JJTM_SyncWebService_live\obj\Debug\JJTM_SyncWebService.pdb

@@ -1,0 +1,43 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Default.cs" %>
+<%@ Register TagPrefix="CR" Namespace="CrystalDecisions.Web" Assembly="CrystalDecisions.Web, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Jebsen & Jessen Technology Mobile Service</title>
+    <link href="common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+  <table width="100%" border="0" cellspacing="0" cellpadding="8">
+    <tr>
+      <td class="PageHeader">Survey Report</td>
+    </tr>
+    <tr>
+      <td>    
+        <table width="100%"  border="0" cellpadding="2" cellspacing="0" class="FormTable">
+
+            <tr>
+                <td class="DataGridToolbar">
+                <asp:Label ID="Label_Year" runat="server" Text="Year: " CssClass="FormFieldName"></asp:Label>
+                <asp:DropDownList ID="ddl_year" runat="server" CssClass="FormElement"></asp:DropDownList>
+                <asp:DropDownList ID="ddl_dchannel" runat="server" CssClass="FormElement"></asp:DropDownList>
+                <asp:DropDownList ID="ddl_plant" runat="server" CssClass="FormElement"></asp:DropDownList>
+                <asp:Button ID="display" runat="server" OnClick="display_Click" CssClass ="FormElement" Text="Display Report" />
+                <asp:Button ID="Back" CssClass="FormElement" runat="server" OnClick="back_click" Text="Back" /><br /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><CR:CrystalReportViewer ID="crystalReportViewer" runat="server" AutoDataBind="true" /></td>
+            </tr>
+        </table>
+</td>
+    </tr>
+  </table>        
+    </div>
+    </form>
+</body>
+</html>

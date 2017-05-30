@@ -1,0 +1,25 @@
+public class Header : Page, IRequiresSessionState
+{
+    protected HtmlForm form1;
+    protected HtmlHead Head1;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+
+    protected HttpApplication ApplicationInstance
+    {
+        get
+        {
+            return this.Context.ApplicationInstance;
+        }
+    }
+
+    protected DefaultProfile Profile
+    {
+        get
+        {
+            return (DefaultProfile) this.Context.Profile;
+        }
+    }
+}

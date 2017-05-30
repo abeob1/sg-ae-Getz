@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<setup>
+
+  <FormLogin>
+    <Label_UserName>Tên đăng nhập</Label_UserName>
+    <Label_Password>Mật khẩu</Label_Password>
+    <Button_Login>Đăng nhập</Button_Login>
+    <Button_Cancel>Hủy</Button_Cancel>
+  </FormLogin>
+  
+  <FormTestConnection>
+  </FormTestConnection>
+  
+  <FormMain>
+    <MessageConfirmSynchronization>Xác nhận việc chuyển giao</MessageConfirmSynchronization>
+    <MessageSynchronizedSuccess>Truyền đã thành công</MessageSynchronizedSuccess>
+    <MessageConfirmLogout>Xác nhận đăng xuất</MessageConfirmLogout>
+    <MessageAreYouSure>Bạn có chắc chắn không?</MessageAreYouSure>
+    <MessageFinish></MessageFinish>
+    <MessageSuccessUpdateCheckList></MessageSuccessUpdateCheckList>
+    <TabNotificationDetail>Xem chi tiết</TabNotificationDetail>
+    <TabTimelime>Thời gian</TabTimelime>
+    <TabDamageCause>Triệu chứng/nguyên nhân</TabDamageCause>
+    <TabParts>Phụ tùng</TabParts>
+    <TabChecklist>Việc sửa chữa</TabChecklist>
+    <TabQuotation>Báo giá</TabQuotation>
+    <TabSummary>Tóm tắt</TabSummary>
+    <TabFinal>Cuối cùng</TabFinal>
+    <TabSignOff>Đăng nhập</TabSignOff>
+    <JobListing>Can mặt hàng sửa chữa</JobListing>
+    <Subject>Danh sách</Subject>
+    <ActType>Số M</ActType>
+    <Equipment>Loại máy</Equipment>
+    <EquipmentSnr>Số sửa chữa</EquipmentSnr>
+    <RelatedNotification>Liên quan đến các mặt hàng sửa chữa</RelatedNotification>
+    <SoldTo>Bán bởi</SoldTo>
+    <ServiceOrder>Service Order</ServiceOrder>
+    <Priority>Thứ tự cường độ</Priority>
+    <EquipmentLocation>Địa điểm của máy</EquipmentLocation>
+    <NotificationID>Số sửa chữa</NotificationID>
+    <SubjectColumnOnDatagrid>Các mặt hàng sửa  chữa</SubjectColumnOnDatagrid>
+    <DropdownAsc>Từ cao đến thấp</DropdownAsc>
+    <DropdownDesc>Từ tăng dần</DropdownDesc>
+    <DropdownDate>Ngày</DropdownDate>
+    <DropdownSubject>Chủ đề</DropdownSubject>
+    <ButtonFilter></ButtonFilter>
+    <TooltipPartsOnVan></TooltipPartsOnVan>
+    <TooltipTestConnection></TooltipTestConnection>
+    <TooltipSynchronize></TooltipSynchronize>
+    <TravelStartOnButton>Thời gian</TravelStartOnButton>
+    <TravelEndOnButton>Travel End</TravelEndOnButton>
+    <WaitingOnButton>Thời gian chờ đợi</WaitingOnButton>
+    <JobStartOnButton>Thời gian luyên tập</JobStartOnButton>
+    <JobEndOnButton>Đình chỉ công việc</JobEndOnButton>
+    <FinishOnButton>Kết thúc</FinishOnButton>
+    <TravelStartOnLabel>Thời gian đi lại</TravelStartOnLabel>
+    <WaitingOnLable>Thời gian chờ đợi</WaitingOnLable>
+    <JobStartOnLabel>Thời gian luyện tập</JobStartOnLabel>
+    <Shared>Tôi đã tham gia</Shared>
+    <TimelineHistory>Lich sử thời gian</TimelineHistory>
+    <DateOnDataGrid>Ngày</DateOnDataGrid>
+    <DescriptOnDataGrid>Các mặt hàng sửa chữa</DescriptOnDataGrid>
+    <TravelOnGrid>Thời gian</TravelOnGrid>
+    <WaitingOnGrid>T/gian chờ đợi khách hàng</WaitingOnGrid>
+    <JobOnGrid>Thực tế thời gian sửa chữa</JobOnGrid>
+    <Damages>Triệu chứng</Damages>
+    <DamageCodeOnGrid>Mã</DamageCodeOnGrid>
+    <DamageGroupOnGrid>Nhóm</DamageGroupOnGrid>
+    <DamageDescriptionOnGrid>Xem chi tiết</DamageDescriptionOnGrid>
+    <Causes>Nguyên nhân</Causes>
+    <CauseCodeOnGrid>Mã</CauseCodeOnGrid>
+    <CauseGroupOnGrid>Nhóm</CauseGroupOnGrid>
+    <CauseDescriptionOnGrid>Xem chi tiết</CauseDescriptionOnGrid>
+    <PartNoOnDataGrid>Phần số</PartNoOnDataGrid>
+    <PartDescOnDataGrid>Xem chi tiết</PartDescOnDataGrid>
+    <PartQuantityOnDataGrid>Số lượng</PartQuantityOnDataGrid>
+    <PartConsumedOnDataGrid>Được dùng để</PartConsumedOnDataGrid>
+    <PartReservedOnDataGrid>Dự trữ (Ltd)</PartReservedOnDataGrid>
+    <PartUnitOnDataGrid>Đơn vị</PartUnitOnDataGrid>
+    <CheckListType>Loại</CheckListType>
+    <CheckList>Danh sách</CheckList>
+    <TestResult>Kết quả</TestResult>
+    <ModelNoForCheckList></ModelNoForCheckList>
+    <NameForCheckList></NameForCheckList>
+    <DepartmentForCheckList></DepartmentForCheckList>
+    <SerialNoForCheckList></SerialNoForCheckList>
+    <QuotationNoOnGrid>Báo giá số</QuotationNoOnGrid>
+    <QuotationRemarksOnGrid>Ghi chú</QuotationRemarksOnGrid>
+    <NotificationIDForSummary></NotificationIDForSummary>
+    <SubjectForSummary></SubjectForSummary>
+    <ActTypeForSummary></ActTypeForSummary>
+    <SoldToForSummary>ชื่</SoldToForSummary>
+    <TotalTravelTimeForSummary></TotalTravelTimeForSummary>
+    <TotalWorkingTimeForSummary></TotalWorkingTimeForSummary>
+    <TotalOverallTimeForSummary>เวลาที่ใช้ทั้</TotalOverallTimeForSummary>
+    <DamagesForSummary></DamagesForSummary>
+    <CausesForSummary></CausesForSummary>
+    <PartsForSummary></PartsForSummary>
+    <TimelinesForSummary></TimelinesForSummary>
+    <JobDateForSummary></JobDateForSummary>
+    <TravelStartForSummary></TravelStartForSummary>
+    <TravelEndForSummary></TravelEndForSummary>
+    <TotalTravelTimeTimelineForSummary></TotalTravelTimeTimelineForSummary>
+    <WaitingTimeForSumamry></WaitingTimeForSumamry>
+    <JobStartForSummary></JobStartForSummary>
+    <JobEndForSummary></JobEndForSummary>
+    <TotalWorkingTimeForSummary></TotalWorkingTimeForSummary>
+    <FeedbackSentence>Xin vui lòng đánh giá sự hài lòng cho dịch vụ này</FeedbackSentence>
+    <FeedbackForExcellent>Tuyệt vời</FeedbackForExcellent>
+    <FeedbackForAboveExpectation>Tốt</FeedbackForAboveExpectation>
+    <FeedbackForMeetExpectation>Cũng được</FeedbackForMeetExpectation>
+    <FeedbackForBelowExpectation>Cần được cải thiện</FeedbackForBelowExpectation>
+    <SignatureSentence>Vui lòng đăng nhập để xác nhận điều này để sửa chữa</SignatureSentence>
+    <NameForSignOff></NameForSignOff>
+    <ContactForSignOff></ContactForSignOff>
+    <DesignationForSignOff></DesignationForSignOff>
+    <DepartmentForSignOff></DepartmentForSignOff>
+    <SurvuyButton></SurvuyButton>
+    <ButtonTravelStart></ButtonTravelStart>
+    <ButtonTravelEnd></ButtonTravelEnd>
+  </FormMain>
+  
+  <FormAddEditDamage>
+    <AddDamage>Thêm trục trặc</AddDamage>
+    <EditDamage>Đúng trục trặc</EditDamage>
+    <Group>Nhóm</Group><Code>Mã</Code>
+    <Description>Xem chi tiết</Description>
+    <ValidateDescription></ValidateDescription>
+    <MessageSuccess></MessageSuccess>
+  </FormAddEditDamage>
+  
+  <FormAddEditCause>
+    <AddCause>Thêm nguyên nhân</AddCause>
+    <EditCause>Gây ra</EditCause>
+    <Group>Nhóm</Group>
+    <Code>Mã</Code>
+    <Description>Xem chi tiết</Description>
+    <ValidateDescription></ValidateDescription>
+    <MessageSuccess></MessageSuccess>
+  </FormAddEditCause>
+  
+  <FormAddEditNewPart>
+    <AddNewPart>Thêm phần mới</AddNewPart>
+    <EditPart>Phần chỉnh sửa</EditPart>
+    <PartNo>Mã phần</PartNo>
+    <Or>Hoặc</Or>
+    <Description>Xem chi tiết</Description>
+    <Unit>Đơn vị</Unit>
+    <Consumed>Được dùng để</Consumed>
+    <Quantity>Số lượng</Quantity>
+    <Reserved>Dự trữ (Ltd)</Reserved>
+    <MessageConfirmDelete></MessageConfirmDelete>
+  </FormAddEditNewPart>
+  
+  <FormAvailableParts>
+    <AvailableParts>Hàng tồn kho của các phụ tùng thay thế</AvailableParts>
+    <PartsNoOnDataGrid>Mã phần</PartsNoOnDataGrid>
+    <OldPartOnDataGrid>Mã gốc</OldPartOnDataGrid>
+    <DescOnDataGrid>Xem chi tiết</DescOnDataGrid>
+    <AvailableOnDataGrid>Sẵn có</AvailableOnDataGrid>
+    <ReservedOnDataGrid>Dự trữ (Ltd)</ReservedOnDataGrid>
+    <ConsumedOnDataGrid>Tiêu thụ</ConsumedOnDataGrid>
+    <UOM>Đơn vị</UOM>
+  </FormAvailableParts>
+  
+  <FormAddEditQuotation>
+    <ValidityPeriod>Thời hạn hiệu lực</ValidityPeriod>
+    <PaymentTerm>Điều kiển thanh toán</PaymentTerm>
+    <DeliveryTerm></DeliveryTerm>
+    <FreeDelivery></FreeDelivery>
+    <Remarks>Nhận xét</Remarks>
+    <TotalPrice>Tổng</TotalPrice>
+    <NoOnGrid>Số</NoOnGrid>
+    <MaterialDescOnGrid>Nguyên liệu giảm dần</MaterialDescOnGrid>
+    <PartNoOnGrid>Mã phần</PartNoOnGrid>
+    <QtyOnGrid>Số lượng</QtyOnGrid>
+    <UnitPriceOnGrid>Giá</UnitPriceOnGrid>
+    <DiscountOnGrid>Giảm giá (%)</DiscountOnGrid>
+    <TotalPriceOnGrid>Tổng</TotalPriceOnGrid>
+    <QuotationButton>Báo giá</QuotationButton>
+    <TOSButton>Điều khoản bán hàng</TOSButton>
+    <COD>Thanh toán khi giao hàng</COD>
+    <Days30>30 ngày tín dụng</Days30>
+    <Days60>60 ngày tín dụng</Days60>
+    <Days90>90 ngày tín dụng</Days90>     
+    <MessageSuccess></MessageSuccess>
+  </FormAddEditQuotation>
+  
+  <FormPartHistory>
+    <ColumnForNotification></ColumnForNotification>
+    <ColumnForSubject></ColumnForSubject>
+    <ColumnForDamages></ColumnForDamages>
+    <ColumnForCauses></ColumnForCauses>
+    <ColumnForParts></ColumnForParts>
+  </FormPartHistory>
+  
+  <FormCustomerDetail>
+    <Name1>ชื่อ 1</Name1>
+    <Name2>ชื่อ 2</Name2>
+    <Address>ที่อยู่</Address>
+    <Tel>เบอร์โทร</Tel>
+    <Fax>เบอร์แฟกส์</Fax>
+  </FormCustomerDetail>
+    
+ </setup>

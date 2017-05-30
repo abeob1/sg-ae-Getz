@@ -1,0 +1,120 @@
+public class EngineerHourUtilization : Page, IRequiresSessionState
+{
+    protected Button Back;
+    protected CrystalReportViewer crystalReportViewer;
+    private SessionConfig CurSessionConfig;
+    protected DropDownList ddl_dchannel;
+    protected DropDownList ddl_engineer;
+    protected DropDownList ddl_plant;
+    protected DropDownList ddl_year;
+    protected Button display;
+    protected HtmlForm form1;
+    protected Label Label_Engineer;
+    protected Label Label1;
+    private ReportDocument reportDocument;
+
+    protected void back_click(object sender, EventArgs e)
+    {
+        base.Response.Redirect("Main.aspx");
+    }
+
+    private void ConfigureCrystalReports()
+    {
+    }
+
+    protected void ddl_dchannel_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        this.ddl_engineer.Items.Clear();
+        using (UserManager manager = new UserManager(this.CurSessionConfig))
+        {
+            ApplicationUserCollection masterUsers = manager.GetMasterUsers(this.ddl_dchannel.SelectedValue, this.ddl_plant.SelectedValue);
+            if ((masterUsers != null) && (masterUsers.Count > 0))
+            {
+                foreach (ApplicationUser user in masterUsers)
+                {
+                    this.ddl_engineer.Items.Add(new ListItem(user.UserID, user.UserID));
+                }
+            }
+        }
+    }
+
+    protected void ddl_plant_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        this.ddl_dchannel_SelectedIndexChanged(sender, e);
+    }
+
+    protected void display_Click(object sender, EventArgs e)
+    {
+        ReportDocument document = new ReportDocument();
+        ParameterField field = new ParameterField();
+        ParameterFields fields = new ParameterFields();
+        ParameterDiscreteValue value2 = new ParameterDiscreteValue();
+        field.set_Name("@Year");
+        value2.set_Value(this.ddl_year.SelectedValue);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        field = new ParameterField();
+        field.set_Name("@Engineer");
+        value2 = new ParameterDiscreteValue();
+        value2.set_Value(this.ddl_engineer.SelectedValue);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        field = new ParameterField();
+        field.set_Name("@TargetHour");
+        value2 = new ParameterDiscreteValue();
+        value2.set_Value(0x80);
+        field.get_CurrentValues().Add(value2);
+        fields.Add(field);
+        this.crystalReportViewer.set_ParameterFieldInfo(fields);
+        string str = base.Server.MapPath("Reports/EngineerHourUtilizationReport.rpt");
+        document.Load(str);
+        document.SetDatabaseLogon(SystemInformation.GeneralVariables.DatabaseUserID, SystemInformation.GeneralVariables.DatabasePassword, SystemInformation.GeneralVariables.DatabaseServer, SystemInformation.GeneralVariables.DatabaseName, false);
+        this.crystalReportViewer.set_ReportSource(document);
+    }
+
+    private void Page_Init(object sender, EventArgs e)
+    {
+        this.ConfigureCrystalReports();
+        this.CurSessionConfig = new SessionConfig(0, SystemInformation.GeneralVariables.DBConnectionString);
+        if (!base.IsPostBack)
+        {
+            string text = Convert.ToString((int) (DateTime.Now.Year - 1));
+            string str2 = Convert.ToString(DateTime.Now.Year);
+            string str3 = Convert.ToString((int) (DateTime.Now.Year + 1));
+            this.ddl_year.Items.Add(new ListItem(text, text));
+            this.ddl_year.Items.Add(new ListItem(str2, str2));
+            this.ddl_year.Items.Add(new ListItem(str3, str3));
+            this.ddl_plant.Items.Add(new ListItem("", ""));
+            this.ddl_plant.Items.Add(new ListItem("320", "320"));
+            this.ddl_plant.Items.Add(new ListItem("820", "820"));
+            this.ddl_dchannel.Items.Add(new ListItem("", ""));
+            this.ddl_dchannel.Items.Add(new ListItem("3I", "3I"));
+            this.ddl_dchannel.Items.Add(new ListItem("3O", "3O"));
+            this.ddl_dchannel.Items.Add(new ListItem("3S", "3S"));
+        }
+        else
+        {
+            this.crystalReportViewer.set_ReportSource(this.reportDocument);
+        }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+
+    protected HttpApplication ApplicationInstance
+    {
+        get
+        {
+            return this.Context.ApplicationInstance;
+        }
+    }
+
+    protected DefaultProfile Profile
+    {
+        get
+        {
+            return (DefaultProfile) this.Context.Profile;
+        }
+    }
+}

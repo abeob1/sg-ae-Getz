@@ -25,3 +25,8 @@ E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Sou
 E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache
 E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
 E:\Abeo-Projects\Abeo_Projects_WorkArea\GETZ\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb
+E:\Abeo Projects\GETZ\trunk\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.dll
+E:\Abeo Projects\GETZ\trunk\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\bin\Debug\Swordfish_v2_Core.pdb
+E:\Abeo Projects\GETZ\trunk\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.csprojResolveAssemblyReference.cache
+E:\Abeo Projects\GETZ\trunk\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.dll
+E:\Abeo Projects\GETZ\trunk\1. Source\Web Services\Existing Source Code Latest_Feb05th2016\swordfish_v2_Core\obj\Debug\Swordfish_v2_Core.pdb
